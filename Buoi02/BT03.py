@@ -15,4 +15,4 @@ elif pay >= 100:
     discount = 25
 elif pay >= 75:
     discount = 15
-print(f"Discount: {discount}$, need to pay: {pay - discount}")
+print(f"Discount: {discount}$, need to pay: {pay - discount}$")
