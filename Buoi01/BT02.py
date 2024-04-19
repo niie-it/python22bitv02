@@ -17,4 +17,14 @@ P = round(2 * R * math.pi)
 - In số tiền cần đổi biết máy ATM vô hạn và có các mệnh giá:
 50k, 100k, 200k, 500k đơn vị ngàn đồng cho trường hợp ít tờ nhất'''
 
-so_tien_
+so_tien_can_doi = int(input("Cần đổi (ngàn đồng): "))
+so_to_500k = so_tien_can_doi // 500
+so_tien_can_doi %= 500
+so_to_200k = so_tien_can_doi // 200
+so_tien_can_doi %= 200
+so_to_100k = so_tien_can_doi // 100
+so_tien_can_doi %= 100
+so_to_50k = so_tien_can_doi // 50
+so_tien_can_doi %= 50
+
+print(f"{so_to_500k} tờ 500k, {so_to_200k} tờ 200k, {so_to_100k} tờ 100k, {so_to_50k} tờ 50k")
